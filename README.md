@@ -31,9 +31,28 @@ The CoNLL-2003 dataset is a benchmark dataset widely used for training and evalu
 - **Hyperparameter Tuning**: Hyperparameters such as batch size, learning rate, and number of epochs are tuned for optimal performance.
 
 ## Evaluation and Results
-- **Evaluation Metrics**: The model is evaluated using metrics like accuracy, precision, recall, and F1-score.
-- **Results**: The performance of the model on the test dataset is reported with detailed results and analysis.
+- **Number of sentences**: 14,041
+- **Number of tokens**: 203,621
+- **Number of unique tokens**: 23,623
 
+### Training Performance
+```
+Epoch 1/5
+395/395 [==============================] - 36s 86ms/step - loss: 0.1696 - accuracy: 0.9746 - val_loss: 0.0702 - val_accuracy: 0.9795
+Epoch 2/5
+395/395 [==============================] - 34s 85ms/step - loss: 0.0556 - accuracy: 0.9824 - val_loss: 0.0487 - val_accuracy: 0.9849
+Epoch 3/5
+395/395 [==============================] - 34s 85ms/step - loss: 0.0393 - accuracy: 0.9874 - val_loss: 0.0404 - val_accuracy: 0.9878
+Epoch 4/5
+395/395 [==============================] - 34s 85ms/step - loss: 0.0285 - accuracy: 0.9917 - val_loss: 0.0327 - val_accuracy: 0.9910
+Epoch 5/5
+395/395 [==============================] - 34s 86ms/step - loss: 0.0191 - accuracy: 0.9953 - val_loss: 0.0267 - val_accuracy: 0.9929
+```
+### Test Performance
+```
+44/44 [==============================] - 1s 22ms/step - loss: 0.0267 - accuracy: 0.9929
+Test loss: 0.026744071394205093, Test accuracy: 0.9928825497627258
+```
 ## Installation
 
 To run this notebook, you need the following packages:
